@@ -3,7 +3,7 @@ const fs = require('fs');
 var requests = require('requests');
 
 
-const homeFile = fs.readFileSync("home.html", "utf-8");
+const homeFile = fs.readFileSync("index.html", "utf-8");
 const server = http.createServer((req, res) => {
   if (req.url == '/') {
     requests("https://api.openweathermap.org/data/2.5/weather?q=Vadodara&appid=b09ce823ac009dd3ac5af2097aab8ef8")
